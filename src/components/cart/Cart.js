@@ -5,6 +5,7 @@ import CartColums from './CartColums'
 import EmptyCart from './Empty-Cart'
 import CartList from './CartList'
 import CartTotal  from './CartTotal'
+
  
  class Cart extends Component {
   render() {
@@ -20,7 +21,7 @@ import CartTotal  from './CartTotal'
                 <Title name="your" title="cart"/>
                 <CartColums/>
                 <CartList value={value}/>
-                <CartTotal value ={value}/>
+                <CartTotal value ={value} history={this.props.history}/>
               </React.Fragment>
               
             }

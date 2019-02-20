@@ -1,4 +1,4 @@
-import {storeProducts,detailProduct} from './data'
+import {storeProducts} from './data'
 import React, { Component } from 'react'
 import {GET_PRODUCT,ADD_TO_CART,OPEN_MODAL,CLOSE_MODAL,ADD_TOTAL,CLEAR_CART,REMOVE_ITEM,INCREMENT,DESCREMENT } from './actions/Action-types'
 

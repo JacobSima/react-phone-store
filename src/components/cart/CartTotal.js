@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import {Consumer} from '../../Context'
 import {Link} from 'react-router-dom'
 import { clearCart} from '../../actions/Actions';
+import Paypal from './Paypal'
 
  class CartTotal extends Component {
   render() {
@@ -26,6 +27,7 @@ import { clearCart} from '../../actions/Actions';
                   <h5>
                     <span className="text-title">total : <strong>$ {cartTotal.toFixed(2)}</strong></span>
                   </h5>
+                  <Paypal total={cartTotal} dispatch={dispatch} history={this.props.history}/>
                 </div>
                </div>
               </div>
